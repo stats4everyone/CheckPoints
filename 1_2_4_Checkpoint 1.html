@@ -1,0 +1,78 @@
+<p><!-----begin hide text-only version of check point 1---------------
+<p><em><strong>Please try the following problem.&nbsp;<span style="line-height: 1.6em;">The solution is in the Resources of this Module under Check Point 1.&nbsp;</span></strong></em></p>
+
+<p>Label the following variables as Discrete or Continuous:</p>
+
+<dir>1) Time (in seconds) to swim 50 meters.<br />
+	2) Number of people on a bus.<br />
+	3) Price of an airline ticket.
+</dir>
+----------end hide text-only version of check point 1----------><script language="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://www.javascriptsource.com -->
+
+<!-- Begin
+var numQues = 3;
+
+var numChoi = 3;
+
+var answers = new Array(3);
+
+answers[0] = "Continuous";
+answers[1] = "Discrete";
+answers[2] = "Discrete"
+
+function getScore(form) {
+  var score = 0;
+  var currElt;
+  var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        if (currSelection.value == answers[i]) {
+          score++;
+          break;
+        }
+      }
+    }
+  }
+  score = Math.round(score/numQues*100);
+  form.percentage.value = score + "%";
+  var correctAnswers = "";
+  for (i=1; i<=numQues; i++) {
+    correctAnswers += i + ". " + answers[i-1] + "\r\n";
+  }
+  form.solutions.value = correctAnswers;
+}
+</script><!-- STEP TWO: Copy this code into the BODY of your HTML document  -->
+
+
+<form name="quiz">
+<p>
+  1. Time (in Seconds) to swim 50 meters is _____________.<br>
+<input data-cke-saved-name="q1" name="q1" type="radio" value="Discrete">Discrete<br>
+<input data-cke-saved-name="q1" name="q1" type="radio" value="Continuous">Continuous<br>
+<input data-cke-saved-name="q1" name="q1" type="radio" value="Neither Discrete nor Continuous">Neither Discrete nor Continuous<br>
+</p><p>
+2. Number of people on a bus is _____________.<br>
+<input data-cke-saved-name="q2" name="q2" type="radio" value="Discrete">Discrete<br>
+<input data-cke-saved-name="q2" name="q2" type="radio" value="Continuous">Continuous<br>
+<input data-cke-saved-name="q2" name="q2" type="radio" value="Neither Discrete nor Continuous">Neither Discrete nor Continuous<br>
+</p><p>
+3. Price of an airline ticket is _____________.<br>
+<input data-cke-saved-name="q3" name="q3" type="radio" value="Discrete">Discrete<br>
+<input data-cke-saved-name="q3" name="q3" type="radio" value="Continuous">Continuous<br>
+<input data-cke-saved-name="q3" name="q3" type="radio" value="Neither Discrete nor Continuous">Neither Discrete nor Continuous<br>
+</p><p>
+
+<input onclick="getScore(this.form)" type="button" value="Get Score"> <input type="reset" value="Clear answers">
+
+</p><p>Score = <strong><input class="bgclr" disabled="disabled" data-cke-saved-name="percentage" name="percentage" size="5" type="text"></strong>
+<br>
+<br>Correct answers:<br>
+<textarea class="bgclr" cols="40" disabled="disabled" name="solutions" rows="4" wrap="virtual"></textarea>
+</p></form>
+</p></script></p>
